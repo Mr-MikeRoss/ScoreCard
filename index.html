@@ -1,30 +1,30 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="scorecard">
-                <h3>HOME</h3>
-                <h4 class="score-style" id="home-score">0
-                    <h4>
-                <div class="score-btns">
-                    <button class="btn-style" onclick="homePoint1()">+1</button>
-                    <button class="btn-style" onclick="homePoint2()">+2</button>
-                    <button class="btn-style" onclick="homePoint3()">+3</button>
+        <div class="main-container">
+            <div class="score-container">
+                <h1>HOME</h1>
+                <h2 class="cursed-font" id="home-count">0</h2>
+                <div class="button-container">
+                    <button class="cursed-font" onclick="add1HomePoint()">+1</button>
+                    <button class="cursed-font" onclick="add2HomePoints()">+2</button>
+                    <button class="cursed-font" onclick="add3HomePoints()">+3</button>
                 </div>
             </div>
-            <div class="scorecard">
-                <h3>AWAY</h3>
-                <h4 class="score-style" id="guest-score">0<h4>
-                <div class="score-btns">
-                    <button class="btn-style" onclick="guestPoint1()">+1</button>
-                    <button class="btn-style" onclick="guestPoint2()">+2</button>
-                    <button class="btn-style" onclick="guestPoint3()">+3</button>
+            <div class="score-container">
+                <h1>GUEST</h1>
+                <h2 class="cursed-font" id="guest-count">0</h2>
+                <div class="button-container">
+                    <button class="cursed-font" onclick="add1GuestPoint()">+1</button>
+                    <button class="cursed-font" onclick="add2GuestPoints()">+2</button>
+                    <button class="cursed-font" onclick="add3GuestPoints()">+3</button>
                 </div>
             </div>
         </div>
-        <button class="btn-style" id="reset-btn" onclick="restButton()">Start New Game</button>
-        <script src="index.js"></script>
+        <button id="reset-button" class="cursed-font" onclick="resetButton()">RESET</button>
+    <script src="script.js"></script>
     </body>
 </html>
